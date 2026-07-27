@@ -1,0 +1,314 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+
+body{
+
+    background:#f1f5f9;
+
+}
+
+
+
+/* APLICAÇÃO */
+
+.chat-app{
+
+    display:flex;
+
+    height:100vh;
+
+}
+
+
+
+/* LISTA DE CONTACTOS */
+
+.contacts{
+
+    width:350px;
+
+    background:white;
+
+    border-right:1px solid #ddd;
+
+    padding:25px;
+
+    overflow-y:auto;
+
+}
+
+
+
+.chat-logo{
+
+    font-size:32px;
+
+    font-weight:bold;
+
+    color:#16a34a;
+
+    margin-bottom:25px;
+
+}
+
+
+.chat-logo span{
+
+    color:#2563eb;
+
+}
+
+
+
+.contacts h2{
+
+    margin-bottom:20px;
+
+}
+
+
+
+.contact{
+
+    display:flex;
+
+    gap:15px;
+
+    padding:15px;
+
+    border-radius:15px;
+
+    cursor:pointer;
+
+    margin-bottom:10px;
+
+}
+
+
+
+.contact:hover,
+.contact.active{
+
+    background:#e0f2fe;
+
+}
+
+
+
+.contact img{
+
+    width:55px;
+
+    height:55px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+}
+
+
+
+.contact p{
+
+    color:#64748b;
+
+    font-size:14px;
+
+}
+
+
+
+
+
+/* CONVERSA */
+
+
+.conversation{
+
+    flex:1;
+
+    display:flex;
+
+    flex-direction:column;
+
+    background:#f8fafc;
+
+}
+
+
+
+
+.chat-header{
+
+    height:75px;
+
+    background:white;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    padding:15px;
+
+    box-shadow:0 2px 8px rgba(0,0,0,.08);
+
+}
+
+
+
+.chat-header img{
+
+    width:50px;
+
+    height:50px;
+
+    border-radius:50%;
+
+}
+
+
+
+.chat-header p{
+
+    color:#16a34a;
+
+}
+
+
+
+/* MENSAGENS */
+
+
+.messages{
+
+    flex:1;
+
+    padding:25px;
+
+    overflow-y:auto;
+
+}
+
+
+
+.message{
+
+    max-width:60%;
+
+    padding:15px;
+
+    border-radius:20px;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.received{
+
+    background:white;
+
+    border-top-left-radius:5px;
+
+}
+
+
+
+.sent{
+
+    background:#16a34a;
+
+    color:white;
+
+    margin-left:auto;
+
+    border-top-right-radius:5px;
+
+}
+
+
+
+
+
+/* ENVIAR */
+
+.send-box{
+
+    background:white;
+
+    padding:15px;
+
+    display:flex;
+
+    gap:10px;
+
+}
+
+
+
+.send-box input{
+
+    flex:1;
+
+    padding:15px;
+
+    border-radius:25px;
+
+    border:1px solid #ddd;
+
+    outline:none;
+
+}
+
+
+
+.send-box button{
+
+    padding:15px 25px;
+
+    border:none;
+
+    border-radius:25px;
+
+    background:#2563eb;
+
+    color:white;
+
+    cursor:pointer;
+
+}
+
+
+
+
+/* CELULAR */
+
+@media(max-width:700px){
+
+
+.contacts{
+
+    display:none;
+
+}
+
+
+
+.message{
+
+    max-width:85%;
+
+}
+
+
+
+}
